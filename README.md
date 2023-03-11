@@ -24,9 +24,10 @@ docker image build -t <app-name>
 docker run <filename> -S <path_to_saved_prediction> <app-name>
 ```
 
-### Usage Preprocessing modules
+### Usage Preprocessing module (modules/cleaning.py)
+To train the preprocessing model:
 
 ```bash
-python cleaning.py <filename> --output_model <path_to_saved_preprocessing_model> --output_training <path_to_clean_training_data>
+python cleaning.py <filename> --output_model <path_to_saved_preprocess_model> --output_training <path_to_cleaned_training_data>
 ```
 where filename is a path to the csv file representing the training dataset for the preprocessing model.
